@@ -1,0 +1,960 @@
+* {
+    margin: 0;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
+    padding: 0;
+}
+
+:root {
+    /* Fonts */
+    --text-max-size: 128px;
+    --text-big-size: 96px;
+    --text-mid-size: 32px;
+    --text-small-size: 27px;
+    --text-min-size: 24px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1920px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Шапка =====================================================*/
+.header {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header>img {
+    width: 100%;
+}
+
+.header-block {
+    position: absolute;
+    top: 47%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 28px;
+    width: 801px;
+    background-color: rgb(0, 0, 0);  
+}
+
+.header-title {
+    color: white;
+    text-align: right;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: var(--text-max-size);
+    font-weight: 900;
+    line-height: 97%;
+}
+
+
+/* Рамка основы ===============================================*/
+.main-conteiner {
+    width: 1387px;
+    margin: 0 auto;
+    margin-top: 130px;
+    border: 18px solid black;
+}
+
+/* Первый блок =================================================*/
+.block1-conteiner {
+    padding-inline: 8.5%;
+    padding-top: 54px;
+}
+
+.nav-conteiner>nav>ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: var(--text-min-size);
+}
+
+.nav-conteiner>nav>ul>li {
+    padding-inline: 35px;
+    text-align: center;
+}
+
+.navbtn{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.navbtn:hover {
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.block1-text {
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+    margin-right: 124px;
+}
+
+.block1-title {
+    text-align: right;
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--text-max-size);
+    font-weight: 900;
+    line-height: 97%;
+}
+
+.block1-description {
+    margin-left: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--text-mid-size);
+    font-weight: 900;
+    line-height: 111%;
+}
+
+.block1-description::selection {
+    background-color: rgb(202, 121, 0);
+}
+
+.block1-footer {
+    display: flex;
+    align-items: center;
+    margin-top: -17px;
+}
+
+.date-conteiner {
+    font-size: var(--text-mid-size);
+    font-weight: 600;
+    line-height: 137%;
+    text-align: center;
+}
+
+.block1-footer-img {
+    margin-right: 35px;
+}
+
+.block1-buy-ticket {
+    width: 345px;
+    padding-top: 14px;
+    padding-bottom: 17px;
+
+    text-decoration: none;
+    text-align: center;
+
+    color: white;
+    font-weight: 700;
+    font-size: var(--text-mid-size);
+    line-height: 137%;
+
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 23px; 
+
+    transition: 0.3s;
+}
+
+.block1-buy-ticket:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/* Второй блок ================================================*/
+.block2-conteiner {
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+    padding-top: 169px;
+    padding-left: 9.2%;
+    padding-right: 7.4%;
+
+    padding-bottom: 147px;
+    background-color: black;
+}
+
+.block2-conteiner>p {
+    margin-right: 52px;
+
+    font-size: var(--text-small-size);
+    line-height: 130%;
+    letter-spacing: 0.025em;
+    color: white;
+}
+
+
+
+/* Третий блок ================================================= */
+.block3-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -189px;
+    padding-inline: 22%;
+    
+}
+
+.block3-conteiner>img {
+    width: 100%;
+}
+
+.block3-conteiner>p {
+    text-align: left;
+    margin-top: 16px;
+    font-size: var(--text-small-size);
+}
+
+
+/* Четвертый блок =========================================== */
+.block4-conteiner {
+    position: relative;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 8.5%;
+    padding-top: 13%;
+    height: 734px;
+}
+
+.block4-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: var(--text-big-size);
+    line-height: 118%;
+    text-align: right;
+}
+
+.block4-img {
+    position: absolute;
+    top: 409px;
+    left: 300px;
+}
+
+.block4-description {
+    position: absolute;
+    right: 120px;
+    top: 506px;
+    width: 446px;
+    font-size: var(--text-min-size);
+    line-height: 133%;
+}
+
+/* Пятый блок ================================================= */
+.block5-conteiner {
+    display: flex;
+    align-items: center;
+    padding-top: 111px;
+    padding-bottom: 111px;
+    padding-inline: 100px;
+    background-color: black;
+    color: white;
+}
+
+.ticket-description {
+    flex: 0 0 25%;
+}
+
+.ticket-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: var(--text-big-size);
+    line-height: 118%;
+}
+
+.ticket-description-text {
+    padding-left: 4px;
+    font-size: var(--text-min-size);
+    line-height: 137%;
+}
+
+.ticket-seller {
+    flex: 0 1 auto;
+    padding-left: 10%;
+}
+
+.indent {
+    margin-left: 35px;
+}
+
+.ticket-count {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.ticket-count-text {
+    font-size: var(--text-small-size);
+    line-height: 110%;
+}
+
+.ticket-counter {
+    margin-left: 20px;
+    width: 279px;
+    height: 69px;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 24px;
+}
+#counter {
+    width: 279px;
+    text-align: center;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px 35px;
+    box-sizing: border-box;
+
+    font-family: inherit;
+    font-size: var(--text-small-size);
+    line-height: 137%;
+    color: white;
+    background-color: black;
+    caret-color: orange;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 23px;
+}
+
+.input::placeholder {
+    color: inherit;
+}
+
+.ticket-price {
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.price-text {
+    font-weight: 400;
+    font-size: var(--text-small-size);
+    line-height: 137%;
+}
+
+.price-num {
+    margin-left: 17px;
+    font-weight: 700;
+    font-size: var(--text-mid-size);
+    line-height: 137%;
+}
+
+.user-agreement {
+    margin-top: 59px;
+}
+
+.check-mark {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.check-mark+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.check-mark+label::before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    flex: 0 0 auto;
+    border: 1px solid #FFFFFF;
+    background-color: white;
+    margin-right: 55px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60% 60%;
+
+    cursor: pointer;
+}
+
+.check-mark:checked+label::before {
+    background-image: url(../img/mark.png);
+}
+ 
+
+.areement-text {
+    font-size: var(--text-small-size);
+    line-height: 110%;
+}
+
+.ticket-payment {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    font-size: var(--text-mid-size);
+    line-height: 137%;
+    border: none;
+    background-color: white;
+    border: 2px solid white;
+
+
+    transition: 0.3s;
+}
+
+.ticket-payment:hover{
+    color: white;
+    background-color: black;
+}
+
+
+/* Шестой блок ================================================== */
+.block6-conteiner {
+    position: relative;
+    display: flex;
+    height: 933px;
+}
+
+.block6-title {
+    position: absolute;
+    top: 167px;
+    right: 115px;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--text-big-size);
+    line-height: 118%;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.block6-img {
+    position: absolute;
+    left: 220px;
+    top: 481px;
+}
+
+.block6-description {
+    position: absolute;
+    right: 658px;
+    bottom: 275px;
+
+    font-size: var(--text-min-size);
+    line-height: 137%;
+}
+
+
+/* Футер============================ */
+.footer-block {
+    padding-left: 9%;
+    padding-top: 13.7%;
+    padding-bottom: 13%;
+    background-color: black;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.adress {
+    font-weight: 400;
+    font-size: var(--text-small-size);
+}
+
+.map {
+    padding-top: 33px;
+    color: white;
+}
+
+.map>a {
+    color: inherit;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 57px;
+    height: 57px;
+    margin-right: 49px;
+    
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: var(--text-mid-size);
+    line-height: 120%;
+}
+
+.number {
+    font-weight: 400;
+    font-size: var(--text-small-size);
+    line-height: 137%;
+}
+
+
+@media (max-width: 1450px) {
+
+    .main-conteiner {
+        width: 1187px;
+    }
+
+
+    .block2-conteiner {
+        padding-left: 7.2%;
+        padding-right: 5.4%;
+    }
+
+
+    .block3-conteiner {
+        margin-top: -110px;
+        
+    }
+
+
+    .block4-conteiner {
+        height: 820px;
+    }
+
+    .block4-img {
+        top: 516px;
+        left: 192px;
+    }
+
+    .block4-description {
+        right: 55px;
+        top: 572px;
+        width: 405px;
+    }
+
+    .block5-conteiner{
+        padding-inline: 64px;
+    }
+
+
+    .block6-title {
+        right: 55px;
+    }
+    
+    .block6-img {
+        left: 178px;
+    }
+    
+    .block6-description {
+        right: 562px;
+    }
+}
+
+@media (max-width: 1240px) {
+
+    :root {
+        /* Fonts */
+        --text-max-size: 96px;
+        --text-big-size: 64px;
+        --text-mid-size: 24px;
+        --text-small-size: 20px;
+        --text-min-size: 16px;
+    }
+
+
+    .header-block {
+        width: 585px;  
+    }
+    
+    .header-title {
+        line-height: 97%;
+    }
+
+
+    .main-conteiner {
+        width: 994px;
+        border: 15px solid black;
+    }
+
+
+    .block1-footer {
+        margin-top: -13px;
+    }
+
+    .date-conteiner {
+        line-height: 26px;
+    }
+     
+    .block1-buy-ticket {
+        padding-top: 6px;
+        padding-bottom: 7px;
+    }
+
+
+    .block2-conteiner>img {
+        width: 55%;
+    }
+    
+
+    .block4-conteiner {
+        height: 500px;
+    }
+
+    .block4-img {
+        width: 33%;
+        top: 295px;
+        left: 254px;
+    }
+
+    .block4-description {
+        right: 103px;
+        top: 376px;
+        width: 278px;
+    }
+
+
+    .block5-conteiner{
+        padding-inline: 60px;
+    }
+
+    .ticket-seller {
+        padding-left: 5%;
+    }
+
+
+    .block6-conteiner {
+        height: 625px;
+    }
+
+    .block6-title {
+        top: 120px;
+        right: 52px;
+    }
+    
+    .block6-img {
+        width: 35%;
+        top: 177px;
+        left: 178px;
+    }
+    
+    .block6-description {
+        right: 414px;
+        bottom: 153px;
+    }
+}
+
+@media (max-width: 1040px) {
+    
+    
+    .header>img {
+        display: none;
+    }
+
+    .header-block {
+        position: relative;
+    }
+
+    .main-conteiner {
+        width: 100%;
+        margin-top: 0;
+        border: 0;
+    }
+
+
+    .block1-footer-img>img {
+        width: 100%;
+    }
+
+
+    .block4-conteiner {
+        position: static;
+        height: auto;
+        flex-direction: column;
+        padding: 8%;
+    }
+
+    .block4-main {
+        display: flex;
+        align-items: center;
+        margin-left: 5%;
+    }
+
+    .block4-img {
+        position: static;
+        flex: 0 1 auto;
+        width: 40%;
+        padding: 5px;
+    }
+
+    .block4-description {
+        position: static;
+        flex: 0 1 auto;
+        padding: 10px;
+    }
+
+
+    .block6-conteiner {
+        position: static;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        height: auto;
+        padding: 8% 8% 0 8%;
+    }
+
+    .block6-text {
+        margin-bottom: 50px;
+    }
+
+    .block6-title {
+        position: static;
+    }
+
+    .block6-img {
+        position: static;
+        object-fit: contain;
+    }
+
+    .block6-description {
+        position: static;
+        padding: 5% 360px 0 0;
+        text-align: right;
+    }
+}
+
+@media (max-width: 880px) {
+    :root {
+        /* Fonts */
+        --text-max-size: 70px;
+        --text-big-size: 48px;
+        --text-mid-size: 20px;
+        --text-small-size: 16px;
+        --text-min-size: 13px;
+    }
+
+    .nav-conteiner>nav>ul {
+        font-size: var(--text-small-size);
+    }
+
+    .block6-description {
+        padding: 5% 264px 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-block {
+        width: 100%;
+        padding: 40px 28px;
+    }
+
+
+    .block1-text {
+        display: block;
+        margin-right: 12%;
+    }
+
+    .block1-description {
+        display: none;
+    }
+
+    .block1-footer {
+        flex-direction: column;
+        margin-top: -9px;
+    }
+
+    .date-conteiner {
+        order: 1;
+        margin: 10px;
+    }
+
+    .block1-buy-ticket {
+        order: 2;
+        margin-top: 10px;
+        color: black;
+        background-color: white;
+    }
+
+    .block1-buy-ticket:hover {
+        color: white;
+        background-color: black;
+        border: 2px solid white;
+    }
+
+
+    .block2-conteiner {
+        margin-top: -55px;
+    }
+
+
+    .block5-conteiner {
+        flex-direction: column;
+        align-items: normal;
+        padding-inline: 13%;
+        padding-top: 70px;
+    }
+
+
+    .ticket-description {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .ticket-description-text {
+        display: none;
+        position: absolute;
+        width: 50%;
+        background-color: rgb(70, 70, 70);
+    }
+
+    .ticket-description:hover .ticket-description-text {
+        display: block;
+    }
+
+    
+    .ticket-seller {
+        padding: 0;
+    }
+
+    .ticket-count {
+        align-items: baseline;
+    }
+
+    .input {
+        padding: 11px 35px;
+    }
+
+    .ticket-price {
+        margin-top: 24px;
+    }
+
+    .user-agreement {
+        margin-top: 35px;
+    }
+
+    .check-mark+label::before {
+        width: 25px;
+        height: 25px;
+    }   
+}
+
+@media (max-width: 640px) {
+    :root {
+        /* Fonts */
+        --text-max-size: 60px;
+        --text-big-size: 40px;
+        --text-mid-size: 16px;
+        --text-small-size: 13px;
+        --text-min-size: 11px;
+    }
+
+
+    .nav-conteiner>nav>ul {
+        font-size: var(--text-mid-size);
+    }
+
+    .block1-footer-img {
+        margin: 0;
+        padding: 0 0 0 10%;
+    }
+
+    .block1-footer-img>img {
+        width: 80%;
+    }
+
+
+    .block2-conteiner>p {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 520px) {
+    :root {
+        /* Fonts */
+        --text-max-size: 48px;
+    }
+
+
+    .block1-conteiner {
+        padding-inline: 3%;
+        padding-top: 35px;
+    }
+    
+    .nav-conteiner>nav>ul>li {
+        padding-inline: 10px;
+    }
+
+    .block1-text {
+        margin-right: 0;
+    }
+
+    .block1-title {
+        text-align: center;
+    }
+
+    .block1-buy-ticket {
+        width: 275px;
+    }
+
+    .block2-conteiner {
+        flex-direction: column-reverse;
+        margin-top: -48px;
+        padding-top: 105px;
+    }
+
+    .block2-conteiner>img {
+        width: 77%;
+    }
+
+    .block2-conteiner>p {
+        padding-top: 15px;
+    }
+
+
+    .block3-conteiner {
+        padding-inline: 18%;
+    }
+
+
+    .block5-conteiner {
+        padding-inline: 5%;
+        padding-bottom: 32px;
+        padding-top: 34px;
+    }
+
+    .indent {
+        margin-left: 20px;
+    }
+
+    .input {
+        padding: 8px 20px;
+    }
+
+    
+    .block6-conteiner {
+        padding: 6% 6% 0 6%;
+    }
+
+    .block6-description {
+        padding: 5% 220px 0 0;
+    }
+
+    .block6-img {
+        display: none;
+    }
+
+    .block6-text {
+        margin-bottom: 24px;
+    }
+
+
+    .footer-block {
+        padding: 7%;
+    }
+
+    .social {
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 385px) {
+    .nav-conteiner>nav>ul>li {
+        padding-inline: 1px;
+    }
+}
