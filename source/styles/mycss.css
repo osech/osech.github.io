@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
-    font-family: 'Michroma', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background: linear-gradient(90deg, #DC9A2C 0%, #593267 100%);
 }
 
