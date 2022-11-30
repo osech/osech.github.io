@@ -62,7 +62,11 @@ footer {
 
 .btn-outline-warning {
     background: linear-gradient(270deg, #DC9A2C 0%, #593267 100%);
-    --bs-btn-hover-color: aquamarine;
+    --bs-btn-hover-color: black;
+}
+
+.btn-outline-warning:hover {
+    background: linear-gradient(90deg, #DC9A2C 0%, #593267 100%);
 }
 
 @keyframes myAnim {
