@@ -62,7 +62,7 @@ footer {
 
 .btn-outline-warning {
     background: linear-gradient(270deg, #DC9A2C 0%, #593267 100%);
-    --bs-btn-hover-color: black;
+    transition: 0.5s;
 }
 
 .btn-outline-warning:hover {
